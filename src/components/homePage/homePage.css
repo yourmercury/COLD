@@ -1,0 +1,43 @@
+.homePage-container {
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    background: url(../../images/20.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.homePage-introduction {
+    width: 100%;
+    position: absolute;
+    top: 25vh;
+}
+
+.homePage-intro {
+    text-align: center;
+}
+
+.homePage-name {
+    font-size: calc(2em + 6vh);
+    letter-spacing: .5vw;
+    margin: 20px 0;
+    color:  rgb(168, 192, 211);
+    text-shadow: 0 0 3px rgb(0, 49, 79);
+}
+
+.homePage-greet {
+    font-size: calc(1em + .1vh);
+    text-transform: uppercase;
+}
+
+.homePage-btn {
+    width: 120px;
+    height: 40px;
+    color: white;
+    background: rgb(0, 49, 79);
+    border: solid rgb(0, 49, 79);
+    font-size: calc(1em + .1vh);
+    text-transform: uppercase;
+    font-weight: bold;
+}
+

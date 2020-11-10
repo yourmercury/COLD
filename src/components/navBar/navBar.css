@@ -1,0 +1,50 @@
+.navBar-container {
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    height: 6vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    transition: top .3s ease-in, background .3s; 
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: fit-content;
+}
+
+.brand {
+    color:rgb(42, 159, 226);
+}
+
+.slide-up {
+    top: -10vh
+}
+
+
+#nav-remove {
+    display: none;
+}
+
+.nav-ham {
+    display: none;
+}
+
+.nav-link {
+    margin-left: 30px;
+    right: 0;
+}
+
+a {
+    text-decoration: none;
+    color:  rgb(0, 49, 79);
+}
+
+.brand {
+    font-size: calc(1.1em + 0.7vh);
+    font-weight: bold;
+}

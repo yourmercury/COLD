@@ -1,0 +1,174 @@
+.projectPage-container {
+    width: 100%;
+    position: relative;
+    height: fit-content;
+    padding: 10vh 0;
+    background: url(../../images/21.jpg);
+    background-size: cover;
+    background-color: rgba(255, 255, 255, 0.822);
+    color: rgb(0, 49, 79);
+    background: rgb();
+}
+
+.background {
+    width: 100%;
+    background: rgba(255, 255, 255, 0.7);
+    position: absolute;
+    top: 5vh;
+    bottom: 5vh;
+    box-shadow: 0 0 10px 0px rgb(53, 53, 53);
+}
+
+.project-content {
+    width: 100%;
+    height: fit-content;
+    position: relative;
+}
+
+.select-view {
+    width: fit-content;
+    margin:auto;
+    margin-bottom: 50px;
+    position: relative;
+    top: 0;
+    opacity: 1;
+    animation: load .5s linear 0s 1;
+}
+
+.the-view {
+        padding-bottom: 10px;
+        border-bottom: 1px solid  rgb(0, 49, 79);
+        animation: view 1s linear 0s 1;
+        opacity: 1;
+    }
+
+.divide {
+    font-size: 1.4em;
+    margin: 0 100px;
+}
+
+.project-frame {
+    height: 48vh;
+    width: 100%;
+    position: relative;
+    top:0;
+    opacity: 1;
+    animation: load .7s linear 0s 1;
+}
+
+.project-container {
+    position: relative;
+    height: 100%;
+    margin-bottom: 30px;
+}
+
+.project {
+    width: 47%;
+    height: 47%;
+    position: absolute;
+    
+    left: 25%;
+    transition: all .5s;
+    box-shadow: 0 0 6px 0px rgb(94, 94, 94);
+    background: rgba(0, 49, 79, 0.37);
+    cursor: pointer;
+}
+
+#first {
+    height: 30vh;
+    width: 60%;
+    left: 0;
+    top: 5vh;
+    z-index: 1;
+    cursor: none;
+    border-radius: 3px;
+}
+
+#second {
+    height: 30vh;
+    width: 60%;
+    left: 40%;
+    top: 5vh;
+    z-index: 1;
+    border-radius: 3px;
+}
+
+#third {
+    width: 70%;
+    height: 40vh;
+    left: 15%;
+    top: 0;
+    z-index: 3;
+    border-radius: 3px;
+    /* background: white; */
+}
+
+#fourth {
+    top: 43vh;
+    width: 50%;
+    height: 5vh;
+    left: 25%;
+    border-radius: 3px;
+    cursor: auto;
+    background: rgba(255, 255, 255, 0.137);
+}
+
+#fourth .slide-control {
+    min-height: fit-content;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    
+    border-radius: 3px;
+}
+
+.select-view span {
+    cursor: pointer;
+}
+
+.first {
+    top: 0;
+    left: 0;
+}
+
+.second {
+    top: 0;
+    left: 53%;
+}
+
+.third {
+    top: 53%;
+    left: 0;
+}
+
+.fourth {
+    top: 53%;
+    left: 53%;
+}
+
+.left, .right {
+    width: 30%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.left i, .right i{
+    font-size: calc(1.5em);
+}
+
+.middle {
+    font-size: 1.4rem;
+    display: flex;
+    align-self: center;
+    justify-content: center;
+}
+
+@keyframes view {
+    from {
+        border-color: rgba(0, 49, 79, 0)
+    }
+}

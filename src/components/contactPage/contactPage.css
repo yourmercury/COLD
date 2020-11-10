@@ -1,0 +1,367 @@
+.contactPage-container {
+    width: 100vw;
+    position: relative;
+    padding: 10vh 0;
+    background: rgb(0, 49, 79);
+    color:rgb(167, 182, 201);
+    transition: width 1s;
+}
+
+.contactPage-content .line {
+    border-color: rgb(167, 182, 201);
+}
+
+.copied {
+    position: fixed;
+    top: 20vh;
+    width: 100px;
+    border-radius: 5px;
+    background-color: rgb(82, 139, 82);
+    color: white;
+    padding: 20px 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: none;
+}
+
+.contact-flex {
+    display: flex;
+    width: inherit;
+}
+
+.contact-address {
+    width: fit-content;
+}
+
+
+
+.contact-social a{
+    color: rgb(167, 182, 201);
+}
+
+.contact-form {
+    width: fit-content;
+    text-align: right;
+    margin-left: auto;
+}
+
+input.form-input {
+    width: 400px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: 1px solid rgb(167, 182, 201);
+    height: 30px;
+    color: white;
+    font-size: 1em;
+    background: rgba(255, 255, 255, 0);
+    box-shadow: 0 0 10px 1px rgb(41, 41, 41);
+}
+
+.contact-form form div {
+    margin-bottom: 10px;
+}
+
+.form-label {
+    margin-right: 10px;
+}
+
+.form-message {
+    width: 400px;
+    border: 1px solid rgb(167, 182, 201);
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0);
+    box-shadow: 0 0 10px 1px rgb(39, 38, 38);
+}
+
+.message-div {
+    display:flex;
+    width: fit-content;
+    margin-left: auto;
+}
+
+.form-btn {
+    width: 100px;
+    height: 40px;
+    background: rgb(167, 182, 201);
+    color: rgb(0, 49, 79);
+    font-weight: bold;
+    border: solid rgb(167, 182, 201);
+}
+
+.contact-title {
+    margin-bottom: 40px;
+}
+
+.contact-form input::placeholder{
+    opacity: 0;
+}
+
+.contact-form textarea::placeholder{
+    opacity: 0;
+}
+
+.contact-address div {
+    margin-bottom: 40px;
+}
+
+.dim {
+    opacity: 0;
+    animation: none;
+}
+
+
+
+@keyframes load {
+    from {
+        transform: translateY(+30%)
+    }
+}
+
+
+
+
+
+@media (max-width: 740px) {
+    button {
+        cursor: pointer;
+    }
+
+    .App-container {
+        min-width: 200px;
+    }
+
+    .homePage-container {
+        height: 100vh;
+        width: calc(100vw);
+        word-wrap: break-word;
+        background-image: url(../../images/17.jpg);
+        
+    }
+
+    .homePage-introduction {
+        width: 80vw;
+        left: 10vw;
+        color: white;
+    }
+
+    .homePage-name {
+        color:  rgb(0, 49, 79);
+        text-shadow: none;
+    }
+
+    .nav {
+       height: 100%;
+    }
+
+    .navBar-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .navBar-container .container {
+        height: 70%;
+    }
+
+    .nav-links {
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        background: rgb(0, 49, 79);
+        color: white;
+        height: 100vh;
+        top: 0;
+        width: 80vw;
+        left: 100%;
+        align-items: center;
+        justify-content: start;
+        transition: transform 1s;
+        z-index: 20;
+    }
+
+    .nav-link {
+        margin: 2.6vh 0;
+        color: rgb(167, 182, 201);
+        font-size: 1.5em;
+        padding: 10px;
+        transition: none;
+        width: 100px;
+        min-width: fit-content;
+        text-align: center
+    }
+
+    .nav-link:hover {
+        color: rgb(0, 49, 79);
+        background-color: rgb(167, 182, 201);
+        font-weight: bold;
+    }
+
+    .link-about {
+        margin-top: 6vh;
+    }
+
+    .nav-ham {
+        display: block;
+        width: 35px;
+        height: 100%;
+        padding: 0 0;
+        padding-left: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    #nav-remove {
+        display: block;
+        align-self: flex-end;
+        height: 50px;
+        margin-top: 20px;
+        padding: 0 20px;
+    }
+
+    #nav-remove span{
+        font-size: 2em;
+    }
+
+    .nav-ham hr {
+        border-color: rgb(0, 49, 79);
+        width: 70%;
+    }
+
+
+    .aboutPage-content {
+        flex-direction: column;
+    }
+
+    .aboutPage-content-about-me {
+        height: 50%;
+    }
+
+    .aboutPage-content-image {
+        height: 50%;
+    }
+
+    .about-me-title {
+        margin-bottom: 15px;
+    }
+
+    .first-par {
+        line-height: 18px;
+        margin-bottom: 15px;
+    }
+
+    .skills {
+        margin-bottom: 15px;
+    }
+
+    .projectPage-container {
+        background-image: url(../../images/19.jpg);
+    }
+
+    .project {
+        cursor: none;
+    }
+
+    .left, .right {
+        cursor: pointer;
+    }
+
+    .left i, .right i{
+        font-size: calc(1.2em);
+    }
+
+    .middle {
+        font-size: 1.1rem;
+    }
+
+    .divide {
+        margin: 0 20px;
+    }
+
+    input.form-input {
+        width: 100%;
+        height: 50px;
+    }
+
+    .form-message {
+        width: 70vw;
+        padding: 10px;
+    }
+
+    .contact-address {
+        margin: auto;
+    }
+
+    .contact-form {
+        width: fit-content;
+        text-align: right;
+        margin-left: 0;
+    }
+
+    label {
+        display: none;
+    }
+
+    .container {
+        width: 90vw;
+        min-width: 200px;
+    }
+
+    .contact-flex {
+        flex-direction: column;
+        margin: auto;
+        align-items: center;
+        width: 76%;
+    }
+
+    .form-btn {
+        width: 100%;
+        border-color: rgb(167, 182, 201);
+        color: rgb(28, 50, 80);
+        height: 50px;
+        background-color: rgb(167, 182, 201);
+        box-shadow: 0 0 15px 0px rgb(39, 38, 38);
+        font-weight: bold;
+    }
+
+    .contact-email {
+        font-size: 4vw;
+        display: flex;
+        justify-content: center;
+    }
+
+    .contact-social {
+        display: flex;
+        width: 70vw;
+        justify-content: space-evenly;
+    }
+
+    .contact-social i{
+        font-size: 1.7em;
+    }
+
+    .contact-form input::placeholder {
+        position: relative;
+        opacity: 1;
+        left: 10px;
+        color: rgb(167, 182, 201);
+    }
+
+    .projectPage-container {
+        background-color:  rgb(167, 182, 201);
+    }
+
+    .contact-form textarea::placeholder {
+        position: relative;
+        opacity: 1;
+        color: rgb(167, 182, 201);
+    }
+
+    @keyframes load {
+        from {
+            opacity: 0;
+            top: 100px;
+        }
+    }
+
+}

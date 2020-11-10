@@ -1,0 +1,111 @@
+.aboutPage-container {
+    width: 100vw;
+    position: relative;
+    padding: 10vh 0;
+    transition: width 1s;
+}
+
+.aboutPage-background-left {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 50%;
+    z-index: -1;
+    background: white;
+}
+
+.aboutPage-background-right {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 50%;
+    height: 100%;
+    background: rgb(0, 49, 79);
+    z-index: -1;
+}
+
+.aboutPage-content {
+    background: white;
+    display: flex;
+    height: 100%;
+    position: relative;
+}
+
+.aboutPage-content-about-me {
+    width: calc(100%);
+    padding-right: 0px;
+}
+
+.line {
+    border-top: 3px solid rgb(0, 49, 79);
+    width: 40px;
+    margin-bottom: 20px;
+}
+
+.about-me-title {
+    margin-bottom: 50px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: rgb(0, 49, 79);
+    position: relative;
+    top: 0;
+    opacity: 1;
+    animation: load .3s linear 0s 1;
+}
+
+.about-me {
+    color:rgb(0, 49, 79);
+}
+
+.first-par {
+    word-wrap: break-word;
+    margin-bottom: 50px;
+    line-height: 1.5em;
+    width: 50%;
+    position: relative;
+    top: 0;
+    opacity: 1;
+    animation: load .5s linear 0s 1;
+}
+
+.skills {
+    margin-bottom: 50px;
+    display: flex;
+    width: calc(50%);
+    justify-content: space-between;
+    padding: 40px;
+    color:white;
+    background-color: rgb(0, 49, 79);
+    font-family: monospace;
+    font-size: 1.2em;
+    position: relative;
+    top: 0;
+    opacity: 1;
+    animation: load .7s linear 0s 1;
+}
+
+.first-skill-list {
+    line-height: 2em;
+}
+
+.second-skill-list {
+    line-height: 2em;
+}
+
+.aboutPage-content-image {
+    width: 100%;
+}
+
+.resume {
+    width: 100px;
+    height: 40px;
+    color: white;
+    background-color: rgb(0, 49, 79);
+    border: rgb(0, 49, 79) solid;
+    font-weight: bold;
+    position: relative;
+    top: 0;
+    opacity: 1;
+    animation: load 1s linear 0s 1;
+}
